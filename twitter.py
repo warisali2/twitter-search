@@ -21,7 +21,7 @@ def main():
         keyword1 = sys.argv[1]
         keyword2 = sys.argv[2]
     else:
-        pexit("Insufficient number of arguments!")
+        pexit("Invalid arguments!")
 
     print("First arg: {}\nSecond arg: {}".format(keyword1, keyword2))
 
