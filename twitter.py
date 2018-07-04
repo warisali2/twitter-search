@@ -1,6 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 import sys
+from TwitterSearch import *
 
 # Function to exit program with printing error
 def pexit(str):
@@ -15,8 +16,8 @@ def main():
 
     # checking passed arguments
     if(len(sys.argv) == 1):
-        keyword1 = input("Enter first keyword: ")
-        keyword2 = input("Enter second keyword: ")
+        keyword1 = raw_input("Enter first keyword: ")
+        keyword2 = raw_input("Enter second keyword: ")
     elif(len(sys.argv) == 3):
         keyword1 = sys.argv[1]
         keyword2 = sys.argv[2]
